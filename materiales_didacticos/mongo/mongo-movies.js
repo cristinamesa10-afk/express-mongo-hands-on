@@ -2,8 +2,7 @@
 
 const mongoose = require("mongoose");
 
-const MONGODB_ATLAS_URI =
-    "mongodb+srv://fjbanezares:Pepito123@cluster0.n87gd.mongodb.net/sample_mflix?retryWrites=true&w=majority";
+const MONGODB_ATLAS_URI = process.env.MONGODB_URI;;
 
 mongoose.connect(MONGODB_ATLAS_URI, {
     useNewUrlParser: true,
